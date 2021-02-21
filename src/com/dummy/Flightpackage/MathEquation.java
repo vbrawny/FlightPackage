@@ -9,10 +9,15 @@ public class MathEquation {
     char opCode;
     double result;
 
-    MathEquation(char opcode,double leftval,double rightval) {
+    MathEquation(char opCode) {
+        this.opCode = opCode;
+    }
+
+    MathEquation(char opcode,double leftval,double rightVal) {
+        this(opcode);
         leftVal=leftval;
-        rightVal = rightval;
-        opCode = opcode;
+        this.rightVal = rightVal;
+        //opCode = opcode;
     }
     //operations
     void execute() {
