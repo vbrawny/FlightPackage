@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         System.out.println("venky the man!");
-        Flight columbusBA = new Flight("British Airways");
-        Flight newyorkVA = new Flight("Virgin Atlantic");
+        Flight columbusBA = new Flight("British Airways",2,1);
+        Flight newyorkVA = new Flight("Virgin Atlantic",1,1);
         Flight lax3=null;
         columbusBA.setSeats(200);
         columbusBA.add1Passenger();
